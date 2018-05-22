@@ -24,6 +24,7 @@ img {
 figure {
   margin: 0;
   max-width: 100%;
+  position: relative;
 }
 
 .film {
@@ -41,15 +42,20 @@ article {
   border: 2px grey solid;
 }
 
-.film-poster > img {
-  grid-column: 1 2;
-}
 
-.action-watch-later {
+/* .action-watch-later {
   position: absolute;
   color: red;
   padding: 10px;
-  
+} */
+
+.fa-clock-o {
+  position: absolute;
+  color: red;
+  padding: 10px;
+  top: 6px;
+  right: 6px;
+  max-width: 100%;
 }
 
 .film-details {
