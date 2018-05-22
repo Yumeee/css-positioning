@@ -17,13 +17,53 @@ body {
 
 img {
   max-width: 100%;
+  padding: 10px;
+  position: relative;
 }
 
 figure {
   margin: 0;
+  max-width: 100%;
 }
 
 .film {
   width: 50%;
   margin: 40px auto;
+}
+
+.film {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row: auto;
+}
+
+article {
+  border: 2px grey solid;
+}
+
+.film-poster > img {
+  grid-column: 1 2;
+}
+
+.action-watch-later {
+  position: absolute;
+  color: red;
+  padding: 10px;
+  
+}
+
+.film-details {
+  grid-column: 2 3;
+  position: relative;
+  padding: 12px;
+  font-size: 13px;
+}
+
+.action-like {
+  right: 0px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: red;
+
 }
